@@ -1,0 +1,306 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.createBtn {
+    padding: 0.75rem 1.5rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.createBtn:hover {
+    background-color: #1d4ed8;
+}
+
+.createBtnSecondary {
+    padding: 0.75rem 1.5rem;
+    background-color: #6b7280;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.createBtnSecondary:hover {
+    background-color: #4b5563;
+}
+
+.formCard {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    border: 1px solid #e5e7eb;
+}
+
+.formTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.formGroup {
+    margin-bottom: 1.25rem;
+}
+
+.label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    resize: vertical;
+    min-height: 80px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.checkboxGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.75rem;
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background-color: #f3f4f6;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.checkboxLabel:hover {
+    background-color: #e5e7eb;
+}
+
+.checkboxLabelChecked {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.checkbox {
+    width: 1rem;
+    height: 1rem;
+    accent-color: #2563eb;
+}
+
+.saveBtn {
+    padding: 0.75rem 1.5rem;
+    background-color: #059669;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.saveBtn:hover {
+    background-color: #047857;
+}
+
+.tableCard {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    background-color: #f9fafb;
+}
+
+.table th {
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6b7280;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: middle;
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.categoryName {
+    font-weight: 600;
+    color: #1f2937;
+    text-transform: capitalize;
+}
+
+.measurementTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+}
+
+.measurementTag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.625rem;
+    background-color: #dbeafe;
+    color: #1e40af;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.noMeasurements {
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+.description {
+    color: #6b7280;
+    font-size: 0.875rem;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.deleteBtn {
+    padding: 0.5rem 1rem;
+    background-color: #fee2e2;
+    color: #dc2626;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.875rem;
+}
+
+.deleteBtn:hover {
+    background-color: #fecaca;
+}
+
+.emptyState {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+.loading {
+    padding: 4rem;
+    text-align: center;
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .checkboxGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tableCard {
+        overflow-x: auto;
+    }
+
+    .table {
+        min-width: 600px;
+    }
+}

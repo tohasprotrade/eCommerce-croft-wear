@@ -1,0 +1,90 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 20px;
+}
+
+.loginBox {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.providers {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.googleBtn, .facebookBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: white;
+    color: #333;
+}
+
+.googleBtn:hover {
+    border-color: #4285F4;
+    background: #f8f9fa;
+}
+
+.facebookBtn:hover {
+    border-color: #1877F2;
+    background: #f8f9fa;
+}
+
+.icon {
+    flex-shrink: 0;
+}
+
+.backLink {
+    margin-top: 32px;
+}
+
+.backLink a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.backLink a:hover {
+    color: #4f46e5;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 18px;
+    color: #666;
+}

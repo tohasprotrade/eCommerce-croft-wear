@@ -1,0 +1,297 @@
+.container {
+    min-height: 100vh;
+    background: #f5f5f5;
+    padding: 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.welcome {
+    color: #555;
+    font-size: 14px;
+}
+
+.logoutBtn {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.logoutBtn:hover {
+    background: #b91c1c;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.monthSelector {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.monthSelector label {
+    font-weight: 600;
+    color: #555;
+}
+
+.select {
+    padding: 10px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+}
+
+.select:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+.viewBtn {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.viewBtn:hover {
+    background: #4338ca;
+}
+
+.summaryCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cardIcon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.cardContent {
+    flex: 1;
+}
+
+.cardContent p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.cardContent h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+}
+
+.cardContent h3.profit {
+    color: #16a34a;
+}
+
+.cardMeta {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.section {
+    margin-bottom: 32px;
+}
+
+.section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.tableCard {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.table th {
+    background: #f9fafb;
+    font-weight: 600;
+    color: #555;
+    font-size: 13px;
+}
+
+.table td {
+    font-size: 14px;
+    color: #333;
+}
+
+.profitCell {
+    color: #16a34a;
+    font-weight: 600;
+}
+
+.typeTag {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.sale {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.purchase {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.adjustment {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.noData {
+    text-align: center;
+    color: #888;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 12px;
+}
+
+.emptyState p {
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modalContent {
+    background: white;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 80vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modalHeader h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.closeBtn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #6b7280;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.closeBtn:hover {
+    color: #333;
+}
+
+.modalContent .tableCard {
+    border-radius: 0;
+    max-height: calc(80vh - 80px);
+    overflow-y: auto;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 18px;
+    color: #666;
+}

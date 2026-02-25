@@ -1,0 +1,667 @@
+.container {
+    position: relative;
+}
+
+.main {
+    padding: 3rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    gap: 2rem;
+    align-items: start;
+}
+
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cardHeader {
+    display: flex;
+    alignItems: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.stepNumber {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.cardTitle {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+.formGroup:last-child {
+    margin-bottom: 0;
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+.input,
+.select,
+.textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #fff;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: #ff6b35;
+}
+
+.shippingOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.shippingOption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.shippingOption.selected {
+    border-color: #ff6b35;
+    background-color: rgba(255, 107, 53, 0.05);
+}
+
+.shippingOptionLeft {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.radioInput {
+    width: 20px;
+    height: 20px;
+    accent-color: #ff6b35;
+}
+
+.shippingLabel {
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.shippingPrice {
+    font-weight: 700;
+    color: #ff6b35;
+}
+
+.paymentBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    border: 2px solid #ff6b35;
+    background-color: rgba(255, 107, 53, 0.05);
+}
+
+.rightColumn {
+    position: sticky;
+    top: 2rem;
+}
+
+.summaryCard {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.summaryTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a1a2e;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.itemsList {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 1.5rem;
+}
+
+.orderItem {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.itemImage {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.itemImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.itemInfo {
+    flex: 1;
+    min-width: 0;
+}
+
+.itemName {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+    color: #1a1a2e;
+}
+
+.itemMeta {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.itemPrice {
+    font-weight: 700;
+    color: #ff6b35;
+    font-size: 1rem;
+}
+
+.summaryRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    color: #666;
+}
+
+.summaryTotal {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 2px solid #f0f0f0;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #1a1a2e;
+}
+
+.totalAmount {
+    color: #ff6b35;
+}
+
+.submitBtn {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+}
+
+.submitBtn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.submitBtn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(255, 107, 53, 0.5);
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modalContent {
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 3rem;
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.successIcon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d4edda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 3rem;
+    color: #28a745;
+}
+
+.modalTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 0.75rem;
+}
+
+.modalText {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.orderIdBox {
+    color: #ff6b35;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    background-color: #fff5f0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.modalTextSmall {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.dismissBtn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #1a1a2e;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.dismissBtn:hover {
+    background-color: #2d2d4a;
+}
+
+@media (max-width: 1200px) {
+    .formGrid {
+        grid-template-columns: 1fr 380px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        padding: 2rem 1rem;
+    }
+
+    .formGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .rightColumn {
+        position: static;
+        order: -1;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 1.25rem;
+    }
+
+    .cardTitle {
+        font-size: 1.1rem;
+    }
+
+    .stepNumber {
+        width: 28px;
+        height: 28px;
+        font-size: 0.8rem;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .formGroup {
+        margin-bottom: 0.75rem;
+    }
+
+    .input,
+    .select,
+    .textarea {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+    }
+
+    .shippingOption {
+        padding: 0.75rem 1rem;
+    }
+
+    .summaryCard {
+        padding: 1.25rem;
+    }
+
+    .summaryTitle {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .itemImage {
+        width: 60px;
+        height: 60px;
+    }
+
+    .itemName {
+        font-size: 0.9rem;
+    }
+
+    .itemMeta {
+        font-size: 0.8rem;
+    }
+
+    .submitBtn {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 1rem 0.5rem;
+    }
+
+    .title {
+        font-size: 1.35rem;
+    }
+
+    .card {
+        padding: 1rem;
+        border-radius: 12px;
+    }
+
+    .cardTitle {
+        font-size: 1rem;
+    }
+
+    .stepNumber {
+        width: 24px;
+        height: 24px;
+        font-size: 0.75rem;
+    }
+
+    .label {
+        font-size: 0.85rem;
+    }
+
+    .input,
+    .select,
+    .textarea {
+        padding: 0.65rem;
+        font-size: 0.9rem;
+    }
+
+    .shippingOption {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .shippingLabel {
+        font-size: 0.9rem;
+    }
+
+    .shippingPrice {
+        font-size: 0.9rem;
+    }
+
+    .summaryCard {
+        padding: 1rem;
+        border-radius: 12px;
+    }
+
+    .summaryTitle {
+        font-size: 1.1rem;
+    }
+
+    .itemsList {
+        max-height: 200px;
+    }
+
+    .itemImage {
+        width: 50px;
+        height: 50px;
+    }
+
+    .itemName {
+        font-size: 0.85rem;
+    }
+
+    .itemPrice {
+        font-size: 0.9rem;
+    }
+
+    .summaryRow {
+        font-size: 0.9rem;
+    }
+
+    .summaryTotal {
+        font-size: 1.1rem;
+    }
+
+    .submitBtn {
+        padding: 0.875rem;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+
+    .modalContent {
+        padding: 2rem 1.5rem;
+    }
+
+    .successIcon {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+    }
+
+    .modalTitle {
+        font-size: 1.5rem;
+    }
+
+    .modalText {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .main {
+        padding: 0.75rem 0.4rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        padding: 0.75rem;
+        border-radius: 10px;
+    }
+
+    .cardTitle {
+        font-size: 0.95rem;
+    }
+
+    .stepNumber {
+        width: 22px;
+        height: 22px;
+        font-size: 0.7rem;
+    }
+
+    .formGroup {
+        margin-bottom: 0.5rem;
+    }
+
+    .input,
+    .select,
+    .textarea {
+        padding: 0.55rem;
+        font-size: 0.85rem;
+        border-radius: 8px;
+    }
+
+    .shippingOption {
+        padding: 0.5rem 0.6rem;
+    }
+
+    .radioInput {
+        width: 16px;
+        height: 16px;
+    }
+
+    .shippingLabel {
+        font-size: 0.8rem;
+    }
+
+    .shippingPrice {
+        font-size: 0.8rem;
+    }
+
+    .summaryCard {
+        padding: 0.75rem;
+    }
+
+    .summaryTitle {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .itemImage {
+        width: 45px;
+        height: 45px;
+    }
+
+    .itemName {
+        font-size: 0.8rem;
+    }
+
+    .itemMeta {
+        font-size: 0.7rem;
+    }
+
+    .itemPrice {
+        font-size: 0.85rem;
+    }
+
+    .summaryRow {
+        font-size: 0.85rem;
+    }
+
+    .summaryTotal {
+        font-size: 1rem;
+    }
+
+    .submitBtn {
+        padding: 0.75rem;
+        font-size: 0.85rem;
+    }
+}

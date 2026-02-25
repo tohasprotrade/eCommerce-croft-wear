@@ -1,0 +1,129 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 20px;
+}
+
+.loginBox {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.crownIcon {
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.label {
+    font-weight: 600;
+    color: #374151;
+    font-size: 14px;
+}
+
+.input {
+    padding: 14px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 0.3s;
+    background: #f9fafb;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #D97706;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.1);
+}
+
+.error {
+    background: #fef2f2;
+    color: #dc2626;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #fecaca;
+}
+
+.submitBtn {
+    background: linear-gradient(135deg, #D97706 0%, #B45309 100%);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.submitBtn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(217, 119, 6, 0.3);
+}
+
+.submitBtn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.links {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.link {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #D97706;
+}
+
+.separator {
+    color: #d1d5db;
+}

@@ -1,0 +1,401 @@
+.container {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid black;
+    padding-left: 1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.emptyState {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emptyIcon {
+    font-size: 4rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.emptyMessage {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.shopBtn {
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.shopBtn:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 3rem;
+}
+
+.cartItems {
+    flex: 1;
+}
+
+.cartItem {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.itemImage {
+    width: 120px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    flex-shrink: 0;
+}
+
+.itemImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.itemDetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.itemName {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.itemMeta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.itemPrice {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.itemActions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.quantityControl {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.quantityBtn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.quantityBtn:hover {
+    background-color: #f5f5f5;
+}
+
+.quantityValue {
+    width: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.removeBtn {
+    color: #999;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.removeBtn:hover {
+    color: #e53935;
+}
+
+.summary {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 12px;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.summaryTitle {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.summaryRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.summaryTotal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+}
+
+.checkoutBtn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.checkoutBtn:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    .content {
+        gap: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        padding-left: 0.75rem;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .summary {
+        position: static;
+        order: -1;
+        padding: 1.25rem;
+    }
+
+    .cartItem {
+        gap: 0.75rem;
+        padding: 1rem 0;
+    }
+
+    .itemImage {
+        width: 90px;
+        height: 110px;
+    }
+
+    .itemName {
+        font-size: 0.95rem;
+    }
+
+    .itemMeta {
+        font-size: 0.8rem;
+    }
+
+    .itemPrice {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .itemActions {
+        gap: 0.5rem;
+    }
+
+    .quantityControl {
+        transform: scale(0.85);
+        transform-origin: left center;
+    }
+
+    .removeBtn {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem 0.5rem;
+    }
+
+    .title {
+        font-size: 1.35rem;
+        border-left-width: 3px;
+    }
+
+    .cartItem {
+        gap: 0.5rem;
+        padding: 0.75rem 0;
+    }
+
+    .itemImage {
+        width: 80px;
+        height: 100px;
+    }
+
+    .itemDetails {
+        flex: 1;
+    }
+
+    .itemName {
+        font-size: 0.9rem;
+    }
+
+    .itemMeta {
+        font-size: 0.75rem;
+    }
+
+    .itemPrice {
+        font-size: 0.9rem;
+    }
+
+    .itemActions {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+    }
+
+    .summary {
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .summaryTitle {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .summaryRow {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .summaryTotal {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        padding-top: 0.75rem;
+    }
+
+    .checkoutBtn {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .emptyIcon {
+        font-size: 2.5rem;
+    }
+
+    .emptyMessage {
+        font-size: 0.9rem;
+    }
+
+    .shopBtn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 0.75rem 0.4rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .cartItem {
+        padding: 0.5rem 0;
+    }
+
+    .itemImage {
+        width: 70px;
+        height: 90px;
+    }
+
+    .itemName {
+        font-size: 0.85rem;
+    }
+
+    .summary {
+        padding: 0.75rem;
+    }
+
+    .summaryTitle {
+        font-size: 0.95rem;
+    }
+
+    .checkoutBtn {
+        padding: 0.65rem;
+        font-size: 0.85rem;
+    }
+}
